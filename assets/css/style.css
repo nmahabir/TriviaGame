@@ -1,0 +1,19 @@
+body {    
+    background-image: url("http://www.thehansindia.com/assets/4133_Friends-tv-show.jpg")
+    
+}
+
+#gameWindow {
+    align-content: center;    
+    background: cornsilk;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+h1, #mainGameHeader, #startButtom, #timeRemaining, #question, #gameover {
+    margin-left: 25px;
+    text-align: center;
+    align-content: center;
+}

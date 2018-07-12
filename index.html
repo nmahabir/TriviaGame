@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friends Trivia Game!</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+ 
+
+</head>
+<body>
+    <container id="mainWindow">
+        <div id="gameWindow">
+            <div class="row" id="mainGameHeader">
+                <h1>FRIENDS TRIVIA GAME!</h1>
+            </div>
+
+            <div id="startButton">
+                <button>Start Quiz</button>
+            </div>
+
+            <span class="row" id="timeRemaining">
+            </span>
+
+            <div class="row">
+                <h3 id="question" align="center"></h3>                
+            </div>
+
+            <div class="row" id="answers">
+                <form>
+                    <input id="a0" type="radio"> <br>
+                    <input id="a1" type="radio"> <br>
+                    <input id="a2" type="radio"> <br>
+                    <input id="a3" type="radio"> 
+                    <button id="next"> </button>
+                </form>
+            </div>
+
+            <div class="row" id="gameover">                 
+                <div id="wins">
+                    <!-- Questions Right: -->
+                </div>        
+                <div id="losses">
+                    <!-- Questions Wrong: -->
+                </div>   
+                <div id="unanswered">
+                    <!-- Questions Unanswered: -->
+                </div>                
+            </div>
+
+
+        </div>
+    </container>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+        
+
+</body>
+</html>
