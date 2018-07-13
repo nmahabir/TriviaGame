@@ -61,8 +61,8 @@ $(document).ready(function() {
 
     for (i = 0; i < questions.length; i++) {
       console.log(questions[i]);
-      var trivia = $("#answers");
-      trivia.html(
+
+      $("#answers").append(
         "<h3 id='questions' align='center'>" +
           questions[i] +
           "</h3>" +
@@ -79,11 +79,10 @@ $(document).ready(function() {
           "<br>" +
           "<input type='radio'>" +
           answers[i][3] +
-          "<br>" +
-          "<button id='next'> Next </button>" +
-          "</form>"
+          "<br>"
+        //   "<button id='next'> Next </button>" +
+        //   "</form>"
       );
-      $("#answers").append(trivia);
     }
   });
 
