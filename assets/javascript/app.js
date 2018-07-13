@@ -102,7 +102,7 @@ $(document).ready(function() {
   }
 
   $("#answers").click(function() {
-    userInput = push(this);
+    userInput = userInput.push(this.value);
     for (i = 0; i < correctResponses.length; i++) {
       if (userInput === correctResponses[i]) {
         wins++;
