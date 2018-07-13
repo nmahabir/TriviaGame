@@ -94,7 +94,7 @@ $(document).ready(function() {
     if (timeLeft === 0) {
       $("#wins").html("Wins: " + gameover.wins);
       $("#losses").html("Losses: " + gameover.losses);
-      $("#wins").html("Unanswered: " + gameover.unanswered);
+      $("#unanswered").html("Unanswered: " + gameover.unanswered);
       stopTimer();
     }
   }
