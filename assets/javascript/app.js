@@ -46,18 +46,17 @@ $(document).ready(function() {
     unanswered: 0
   };
 
-  //   var timeLeft = 120;
+  var timeLeft = 120;
   var userInput = [];
 
-  //   function stopTimer() {
-  //     clearInterval(timeLeft);
-  //     timeLeft = 120;
-  //     $("#timeRemaining").html("Time Remaining: " + timeLeft);
-  //   }
+  function stopTimer() {
+    clearInterval(timeLeft);
+    timeLeft = 120;
+    $("#timeRemaining").html("Time Remaining: " + timeLeft);
+  }
 
   $("#startButton").click(function() {
-    // timeLeft = setInterval(timeRemaining, 1000);
-    // question();
+    timeLeft = setInterval(timeRemaining, 1000);
     $("#startButton").remove();
 
     for (i = 0; i < questions.length; i++) {
@@ -88,64 +87,17 @@ $(document).ready(function() {
     }
   });
 
-  //   function timeRemaining() {
-  //     $("#timeRemaining").html("Time Remaining: " + timeLeft);
-  //     timeLeft--;
+  function timeRemaining() {
+    $("#timeRemaining").html("Time Remaining: " + timeLeft);
+    timeLeft--;
 
-  //     if (timeLeft === 0) {
-  //       $("#wins").html("Wins: " + gameover.wins);
-  //       $("#losses").html("Losses: " + gameover.losses);
-  //       $("#wins").html("Unanswered: " + gameover.unanswered);
-  //       stopTimer();
-  //     }
-  //   }
-
-  //   function question() {
-  //     for (i = 0; i < questions.length; i++) {
-  //       console.log(questions[i]);
-  //       $("#answers").html(
-  //         "<h3 id='questions' align='center'>" +
-  //           questions[i] +
-  //           "</h3>" +
-  //           "<br>" +
-  //           "<form>" +
-  //           "<input type='radio'>" +
-  //           answers[i][0] +
-  //           "<br>" +
-  //           "<input type='radio'>" +
-  //           answers[i][1] +
-  //           "<br>" +
-  //           "<input type='radio'>" +
-  //           answers[i][2] +
-  //           "<br>" +
-  //           "<input type='radio'>" +
-  //           answers[i][3] +
-  //           "<br>" +
-  //           "<button id='next'> Next </button>" +
-  //           "</form>"
-  //       );
-  //       console.log(answers[i][0]);
-  //       console.log(answers[i][1]);
-  //       console.log(answers[i][2]);
-  //       console.log(answers[i][3]);
-  //   $("#answers").html(
-  //     "<form>" +
-  //       "<input type='radio'>" +
-  //       answers[i][0] +
-  //       "<br>" +
-  //       "<input type='radio'>" +
-  //       answers[i][1] +
-  //       "<br>" +
-  //       "<input type='radio'>" +
-  //       answers[i][2] +
-  //       "<br>" +
-  //       "<input type='radio'>" +
-  //       answers[i][3] +
-  //       "<br>" +
-  //       "<button id='next'> Next </button>" +
-  //       "</form>"
-  //     }
-  //   }
+    if (timeLeft === 0) {
+      $("#wins").html("Wins: " + gameover.wins);
+      $("#losses").html("Losses: " + gameover.losses);
+      $("#wins").html("Unanswered: " + gameover.unanswered);
+      stopTimer();
+    }
+  }
 
   // Something to tag the user click and check it with the correctresponses array
 
